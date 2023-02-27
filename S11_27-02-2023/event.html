@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+    <script>
+        function fn(){
+        var btnRef= document.getElementById('btn')
+         btnRef.innerText = "Changed the Content"
+        }
+        function f1(){
+        var btnRef= document.getElementById('btn')
+          btnRef.style.color="red"
+          btnRef.style.padding="50px"
+        }
+        function f2(){
+        var btnRef= document.getElementById('btn')
+          btnRef.style.color="black"
+          btnRef.style.padding="0px"
+        }
+    </script>
+</head>
+<body>
+      <button 
+      onclick="fn()" 
+      onmouseleave="f2()" 
+      onmouseenter="f1()" 
+      id="btn">Event in JS</button>
+</body>
+</html>

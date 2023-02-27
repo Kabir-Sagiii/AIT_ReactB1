@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>JS UI</title>
+</head>
+<body id="body">
+    
+    <script>
+      function createUI(){
+        var divRef= document.createElement('div') // <div>  </div>
+      var h2Ref = document.createElement('h2') //<h2> </h2>
+      var pRef = document.createElement('p') //<p> </p>
+
+        h2Ref.innerText = "JS Element" // <h2> JS Element </h2>
+        pRef.innerText="JS is a Programming Language, using JS we can do DOM MAnipulation"
+          divRef.appendChild(h2Ref) //<div> <h2>---</h2></div>
+          divRef.appendChild(pRef) //<div> <h2>---</h2> <p>--</p></div>
+      document.getElementById('body').appendChild(divRef)
+      }
+      createUI()
+      createUI()
+      createUI()
+
+     
+
+</script>
+</body>
+</html>
