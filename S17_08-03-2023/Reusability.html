@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+    
+    <script type="text/babel">
+            function createUI() {
+             return  <div> 
+                     <h2 id="h2" style={{color:"red",backgroundColor:"black",padding:"30px"}}>React and JSX</h2> 
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sed, iure vitae repellat atque quia at. Voluptates facere enim amet, eaque beatae quas, nemo necessitatibus, quae voluptatem iusto veniam ullam autem iste eveniet labore ea mollitia laudantium velit voluptate? Labore, totam doloremque magni provident aperiam qui molestias delectus dolorem dignissimos.</p>
+                     <button>Explore More</button>
+                </div>
+
+                 }    
+              
+                 function main(){
+                     return  <div>  
+                            { createUI() }
+                            { createUI() }
+                            { createUI() }
+                            { createUI() }
+                           </div>
+                 }
+
+         ReactDOM.render(main(),document.getElementById('root'))
+
+    </script>
+</body>
+</html>
