@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body,h2{
+            margin:0
+        }
+    </style>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+    
+    <script type="text/babel">
+              function CreateNav(){
+                  var divStyle = {
+                       color:"white",
+                       backgroundColor:"black",
+                       padding:"15px",
+                       display:"flex",
+                       justifyContent:"space-between"
+                  }
+                  var aStyle = {
+                      textDecoration:"none",
+                      color:"white",
+                      marginRight:"50px"
+                  }
+                   return <div style={divStyle}>  
+                            <div>  
+                                <h2> MyCompany</h2>
+                                </div>
+
+                            <div>  
+                                 <a style={aStyle} href="#">Home</a>
+                                 <a style={aStyle} href="#">Profile</a>
+                                 <a style={aStyle} href="#">Support</a>
+                                 <a style={aStyle} href="#">login</a>
+                                </div>
+                       </div>
+
+              }
+              function Main(){
+                return <div>
+                      <CreateNav />
+                    
+                       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium culpa aliquid eum amet, molestiae at. Aliquid voluptatibus consectetur a incidunt tenetur ipsum veritatis quae, voluptate placeat dolor. Vel atque illum, consectetur inventore nulla commodi eos labore repellat, neque eaque deleniti aut, eveniet voluptatum aliquam impedit cumque dicta! Nemo labore explicabo incidunt odio voluptate eaque eius qui ipsam veniam iusto saepe quod voluptatum dolor perspiciatis tenetur beatae quas rem, praesentium cumque ea maiores vel fugit? Necessitatibus nulla soluta veniam, corporis, at autem eum, ipsa porro voluptatibus illum laudantium. Fuga veniam voluptatibus soluta sunt exercitationem velit! Distinctio vel soluta libero sed repudiandae!</p>
+                      <CreateNav></CreateNav>
+                    </div>
+               
+              }
+
+              ReactDOM.render(<Main />,document.getElementById('root'))
+
+    </script>
+</body>
+</html>

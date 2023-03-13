@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+    
+    <script type="text/babel">
+           function card(image,name,gender){
+            var cardStyle = {
+                  width:"300px",
+                  padding:"10px",
+                  boxShadow:"0 0 10px black",
+                  textAlign:"center",
+                  
+            }
+              return <div style={cardStyle}>   
+                      <img src={image} width="300" height="300" />
+                      <h2>{name}</h2>
+                      <p>{gender}</p>
+                     </div>
+           }    
+            
+            function App(){
+                return <div style={{display:"flex",justifyContent:"space-evenly"}}>
+                     {card("https://media.istockphoto.com/id/1201437847/photo/good-looking-male-business-professional-in-studio.jpg?s=170667a&w=0&k=20&c=q5Jfx85LpLr4GEPH4DsTpk3bbf3lXsmLVOW84GT_07w=","Raj sinha","Male")}
+                      {card("https://thumbs.dreamstime.com/b/professional-modern-woman-closeup-portrait-young-beautiful-confident-pink-shirt-gray-suit-arms-crossed-folded-smiling-indoors-55345174.jpg","Sneha Reddy","Female")}
+                       {card("https://thumbs.dreamstime.com/b/confident-professional-young-woman-blue-blouse-pointing-finger-upper-left-corner-looking-camera-persuade-customer-make-174846578.jpg","Ayushi singh","Female")}  
+                       </div>
+            }
+
+            ReactDOM.render(App(),document.getElementById('root'))
+    </script>
+</body>
+</html>
