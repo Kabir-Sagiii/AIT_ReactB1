@@ -14,7 +14,8 @@ function Nav(props) {
         <Link to="/">Home</Link>
         <Link to="/products">Products</Link>
         <Link to="/profile">Profile</Link>
-        <Link to="/support">Support</Link>
+        <Link to="/tech">Technology</Link>
+        <Link to={`/support?name=sagar&gender=male`}>Support</Link>
         {isloggedin ? (
           <button
             onClick={() => {

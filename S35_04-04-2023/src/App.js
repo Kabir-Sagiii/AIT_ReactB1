@@ -19,6 +19,12 @@ import Support from "./Components/Routing/Support";
 import ProductDetails from "./Components/Routing/ProductDetails";
 import Error from "./Components/Routing/Error";
 import ProtectPrivate from "./Components/Routing/ProtectPrivate";
+import Technology from "./Components/Routing/Technology";
+import HTML from "./Components/Routing/HTML";
+import CSS from "./Components/Routing/CSS";
+import JS from "./Components/Routing/JS";
+import React from "./Components/Routing/React";
+import ReactJS from "./Components/Routing/React";
 
 function App() {
   const { isloggedin } = useContext(AuthContext);
@@ -39,6 +45,12 @@ function App() {
         <Route path="/support" element={<Support />} />
         <Route path="/productdetails/:id" element={<ProductDetails />} />
         <Route path="/error" element={<Error />} />
+        <Route path="/tech" element={<Technology />}>
+          <Route path="html" element={<HTML />} />
+          <Route path="css" element={<CSS />} />
+          <Route path="js" element={<JS />} />
+          <Route path="react" element={<ReactJS />} />
+        </Route>
       </Routes>
     </div>
   );
