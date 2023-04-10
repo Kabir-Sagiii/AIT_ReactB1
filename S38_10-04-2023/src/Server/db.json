@@ -1,0 +1,36 @@
+{
+  "users": [
+    {
+      "id": 101,
+      "name": "Sagar"
+    },
+    {
+      "name": "Kabir",
+      "id": 102
+    },
+    {
+      "name": "Zoya",
+      "id": 103
+    },
+    {
+      "name": "Samarat",
+      "id": 104
+    },
+    {
+      "name": "Ashok",
+      "id": 105
+    },
+    {
+      "name": "cdsjbcsdjk",
+      "id": 106
+    },
+    {
+      "name": "ReactJS",
+      "id": 107
+    },
+    {
+      "name": "kjfdbvkjfdb",
+      "id": 108
+    }
+  ]
+}
