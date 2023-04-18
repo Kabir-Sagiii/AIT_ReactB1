@@ -1,0 +1,27 @@
+
+.navStyle{
+    background-color: black;
+    color:"white";
+    padding:13px;
+    display: flex;
+
+}
+.Title {
+    width: 40%;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menus {
+
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    color: white;
+    margin-right: 50px;
+    text-decoration: none;
+}
