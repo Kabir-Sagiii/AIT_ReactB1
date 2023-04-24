@@ -1,0 +1,6 @@
+.cardContainer {
+  width: 250px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px black;
+}
