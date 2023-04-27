@@ -1,0 +1,7 @@
+.filterBy {
+  padding: 30px;
+}
+.filterContainer {
+  display: flex;
+  justify-content: space-between;
+}

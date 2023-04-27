@@ -1,0 +1,18 @@
+.productsContainer {
+  display: flex;
+}
+.productsLeftPanel {
+  width: 30%;
+}
+.productsRightPanel {
+  width: 70%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+#page {
+  margin-bottom: 50px;
+  grid-column: 1/3;
+  text-align: center;
+}

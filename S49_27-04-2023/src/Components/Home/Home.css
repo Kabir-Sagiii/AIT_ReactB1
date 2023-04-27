@@ -1,0 +1,48 @@
+body {
+  height: 1000px;
+}
+.container {
+  margin: 50px auto;
+  display: grid;
+  width: 1200px;
+  height: 450px;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 30px;
+}
+.box1 {
+  background-image: url("https://media.istockphoto.com/id/1369227756/photo/giggling-their-way-through-the-mall.jpg?b=1&s=170667a&w=0&k=20&c=OiDwC_sSwTJrNU63Wy0yNZHpvK6JLZabE43HUQU-SOw=");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  grid-row: 1 / 3;
+}
+.box2 {
+  background-image: url("https://img.freepik.com/premium-photo/beautiful-asian-woman-carrying-colorful-bags-shopping-online-with-mobile-phone_8087-3877.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.box3 {
+  background-image: url("https://img.freepik.com/free-photo/two-beautiful-women-shopping-town_1303-16426.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.box11 {
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-2 {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 22px;
+  font-weight: 600;
+}
